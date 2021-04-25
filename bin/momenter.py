@@ -1,7 +1,7 @@
 '''
     Author: Jahongir Sobirov
     Momenter python library
-    Version: 1.0.8
+    Version: 1.0.9
     License: MIT
     All rights reserved (c) 2021
 '''
@@ -159,3 +159,6 @@ def millisecond():
 def second():
     x = datetime.datetime.now()
     print(x.strftime("%S"))
+def minute():
+    x = datetime.datetime.now()
+    print(x.strftime("%M"))
