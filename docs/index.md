@@ -39,6 +39,7 @@ momenter.moment() # 10:16:36
 ```
 
 ### Calc between times
+The `betwean()` method is used to find the time from one time to the next:
 ```python
 momenter.between(600, 1600, "YYYY") # 1000 years
 momenter.between(4, 5, "MM") # 1 month
@@ -48,6 +49,7 @@ momenter.between(22, 34, "mm") # 12 minutes
 momenter.between(4, 14, "SS") # 10 seconds
 ```
 ### dict time
+Python dict data types:
 ```python
 momenter.times(time={"year": 2018, "month": 12, "day": 24, "hour": 14, "minute": 22, "second": 14})
 # {'year': 2018, 'month': 12, 'day': 24, 'hour': 14, 'minute': 22, 'second': 14}
