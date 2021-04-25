@@ -1,4 +1,4 @@
-## Momenter v1.0.3
+## Momenter v1.0.4
 ### Importting Momenter
 
 Import Mometer:
@@ -78,4 +78,10 @@ Returns `true` or `false` value.
 ```python
 momenter.isvalid(7>12) # false
 momenter.isvalid(5=5) # true
+```
+### Clone
+To get the values ​​you need to use the `clone()` method:
+```python
+a = 18
+momenter.clone(a)
 ```
