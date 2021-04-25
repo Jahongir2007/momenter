@@ -14,6 +14,11 @@ def MyFunction():
   global b
   momenter.mydate(b)
 ```
+### Calendar
+For current date:
+```python 
+momenter.calendar() # Sun Apr 25 19:31:42 2021
+```
 ### Formatting
 
 You can format the current view in different views using the `format()` method.
