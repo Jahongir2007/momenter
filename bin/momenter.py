@@ -1,7 +1,7 @@
 '''
     Author: Jahongir Sobirov
     Momenter python library
-    Version: 1.0.2
+    Version: 1.0.3
     License: MIT
     All rights reserved (c) 2021
 '''
@@ -134,5 +134,8 @@ def transform(time, to):
             print(int(time/1),"day")
         else:
             print(time/1,"days")
+def isvalid(value):
+    if value == True:
+        print("true")
     else:
-        print("Error!")
+        print("false")
