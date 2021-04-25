@@ -102,5 +102,5 @@ def times(time):
 def mydate(year, day, month):
     if day == "false":
         print(year,".",month)
-    if month == "false":
-        print(year)
+    else:
+        print(year,".",day,".",month)
