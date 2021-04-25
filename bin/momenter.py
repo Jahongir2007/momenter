@@ -1,7 +1,7 @@
 '''
     Author: Jahongir Sobirov
     Momenter python library
-    Version: 1.0.0
+    Version: 1.0.1
     License: MIT
     All rights reserved (c) 2021
 '''
@@ -104,3 +104,12 @@ def mydate(year, day, month):
         print(year,".",month)
     else:
         print(year,".",day,".",month)
+def nowyear():
+        x = datetime.datetime.now()
+        print(x.strftime("%Y"))
+def nowmonth():
+        x = datetime.datetime.now()
+        print(x.strftime("%m"))
+def nowday():
+        x = datetime.datetime.now()
+        print(x.strftime("%A"))
