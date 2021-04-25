@@ -1,4 +1,4 @@
-## Momenter v1.0.7
+## Momenter v1.0.8
 ### Importting Momenter
 
 Import Mometer:
@@ -119,4 +119,9 @@ momenter.unix(5) # 1619379180
 To view the current milliseconds:
 ```python
 momenter.millisecond() # 1619368076475
+```
+### Second
+To view the current seconds:
+```python
+momenter.second() # 55
 ```
