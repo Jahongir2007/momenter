@@ -1,4 +1,4 @@
-## Momenter v1.0.6
+## Momenter v1.0.7
 ### Importting Momenter
 
 Import Mometer:
@@ -114,4 +114,9 @@ momenter.toArray([2007, 25, 5]) # 2007 / 25 / 5
 To know the Unix time, use the `unix()` method:
 ```python
 momenter.unix(5) # 1619379180
+```
+### Millisecond
+To view the current milliseconds:
+```python
+momenter.millisecond() # 1619368076475
 ```
