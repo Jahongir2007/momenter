@@ -144,6 +144,5 @@ def clone(get):
 def utc():
     current_utc = datetime.datetime.utcnow()
     print(current_utc)
-def arraydate(year, day, month):
-    array = [year, day, month]
-    print(array[0],"/",array[1],"/",array[2])
+def toArray(value):
+        print(value[0],"/",value[1],"/",value[2])
