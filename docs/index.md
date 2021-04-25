@@ -65,3 +65,11 @@ momenter.nowyear() # 2021
 momenter.nowmonth() # 4
 momenter.nowday() # Sunday
 ```
+### Formatting times 
+To display the desired numbers in time:
+```python
+momenter.transform(365, "year") # 1 year
+momenter.transform(365, "month") # 12 months
+momenter.transform(365, "week") # 52.142857142857146 weeks
+momenter.transform(365, "day") # 365.0 says
+```
