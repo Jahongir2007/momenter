@@ -86,7 +86,7 @@ To display the desired numbers in time:
 momenter.transform(365, "year") # 1 year
 momenter.transform(365, "month") # 12 months
 momenter.transform(365, "week") # 52.142857142857146 weeks
-momenter.transform(365, "day") # 365.0 says
+momenter.transform(365, "day") # 365.0 days
 ```
 ### Validation
 Returns `true` or `false` value.
