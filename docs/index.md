@@ -92,3 +92,8 @@ Get UTC:
 ```python
 momenter.utc() # 2021-04-25 13:01:54.547693
 ```
+### Array
+Use the `toArray()` method to array a given date.
+```python
+momenter.toArray([2007, 25, 5]) # 2007 / 25 / 5 
+```
