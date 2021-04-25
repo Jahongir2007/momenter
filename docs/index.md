@@ -5,7 +5,15 @@ Import Mometer:
 ```python
 import momenter
 ```
-
+### Create
+If you want to create your own date, then you need to use the `mydate()` method.
+```python
+a = [2007, 25, 5]
+b = value(a)
+def MyFunction():
+  global b
+  momenter.mydate(b)
+```
 ### Formatting
 
 You can format the current view in different views using the `format()` method.
