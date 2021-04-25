@@ -1,4 +1,4 @@
-## Momenter v1.0.2
+## Momenter v1.0.3
 ### Importting Momenter
 
 Import Mometer:
@@ -72,4 +72,10 @@ momenter.transform(365, "year") # 1 year
 momenter.transform(365, "month") # 12 months
 momenter.transform(365, "week") # 52.142857142857146 weeks
 momenter.transform(365, "day") # 365.0 says
+```
+### Validation
+Returns `true` or `false` value.
+```python
+momenter.isvalid(7>12) # false
+momenter.isvalid(5=5) # true
 ```
