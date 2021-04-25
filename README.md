@@ -16,4 +16,4 @@ import momenter
 def Mybirthday():
   momenter.mydate(2007, 25, 5) # 2007 . 25 . 5
 ```
-### All [docs](https://jahongir2007.github.io/pynumeral/)
+### All [docs](https://jahongir2007.github.io/momenter/)
