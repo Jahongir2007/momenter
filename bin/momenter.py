@@ -1,7 +1,7 @@
 '''
     Author: Jahongir Sobirov
     Momenter python library
-    Version: 1.0.1
+    Version: 1.0.2
     License: MIT
     All rights reserved (c) 2021
 '''
@@ -113,3 +113,29 @@ def nowmonth():
 def nowday():
         x = datetime.datetime.now()
         print(x.strftime("%A"))
+def transform(time, to):
+    if to == "year":
+        if time / 365 == 1:
+            print(int(time/365),"year")
+        else:
+            print(time/365,"years")
+    elif to == "month":
+        if time / 30 == 1:
+            print(int(time/30),"month")
+        else:
+            print(time/30,"months")
+    elif to == "week":
+        if time / 7 == 1:
+            print(int(time/7),"week")
+        else:
+            print(time/30,"weeks")
+    elif to == "day":
+        if time / 1 == 1:
+            print(int(time/1),"day")
+        else:
+            print(time/1,"days")
+    elif to == "hour":
+        if time / 1 == 1:
+            print(int(time/1),"hour")
+        else:
+            print(time/1,"hours")
