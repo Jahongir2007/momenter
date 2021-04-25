@@ -1,7 +1,7 @@
 '''
     Author: Jahongir Sobirov
     Momenter python library
-    Version: 1.0.5
+    Version: 1.0.6
     License: MIT
     All rights reserved (c) 2021
 '''
@@ -146,3 +146,10 @@ def utc():
     print(current_utc)
 def toArray(value):
         print(value[0],"/",value[1],"/",value[2])
+def unix(value):
+    epoch = datetime.datetime(1970, 1, 1)
+    seconds_in_a_day = 60 * 60 * 24
+    five_minutes = datetime.timedelta(seconds=value*60)
+    five_minutes_from_now = datetime.datetime.now() + five_minutes
+    since_epoch = five_minutes_from_now - epoch
+    print(since_epoch.days * seconds_in_a_day + since_epoch.seconds)
