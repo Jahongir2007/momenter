@@ -1,4 +1,4 @@
-## Momenter v1.0.4
+## Momenter v1.0.5
 ### Importting Momenter
 
 Import Mometer:
@@ -83,5 +83,10 @@ momenter.isvalid(5=5) # true
 To get the values ​​you need to use the `clone()` method:
 ```python
 a = 18
-momenter.clone(a)
+momenter.clone(a) # 18
+```
+### UTC
+Get UTC:
+```python
+momenter.utc() # 2021-04-25 13:01:54.547693
 ```
