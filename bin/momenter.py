@@ -1,7 +1,7 @@
 '''
     Author: Jahongir Sobirov
     Momenter python library
-    Version: 1.0.3
+    Version: 1.0.4
     License: MIT
     All rights reserved (c) 2021
 '''
@@ -139,3 +139,5 @@ def isvalid(value):
         print("true")
     else:
         print("false")
+def clone(get):
+    print(get)
