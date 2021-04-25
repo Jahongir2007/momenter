@@ -1,4 +1,4 @@
-## Momenter v1.0.5
+## Momenter v1.0.6
 ### Importting Momenter
 
 Import Mometer:
@@ -104,4 +104,9 @@ momenter.utc() # 2021-04-25 13:01:54.547693
 Use the `toArray()` method to array a given date.
 ```python
 momenter.toArray([2007, 25, 5]) # 2007 / 25 / 5 
+```
+### Unix timestamp
+To know the Unix time, use the `unix()` method:
+```python
+momenter.unix(5) # 1619379180
 ```
