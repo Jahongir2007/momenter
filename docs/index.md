@@ -58,3 +58,10 @@ Get your date:
 momenter.mydate(2007, 25, 5) # 2007.25.5
 momenter.mydate(2007, "false", 5) # 2007.5
 ```
+### Current year, month and day
+To know the current year, month, and day, use the `nowyear()`, `nowmonth()`, and `nowday()` methods:
+```python
+momenter.nowyear() # 2021
+momenter.nowmonth() # 4
+momenter.nowday() # Sunday
+```
