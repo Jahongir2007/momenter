@@ -134,3 +134,5 @@ def transform(time, to):
             print(int(time/1),"day")
         else:
             print(time/1,"days")
+    else:
+        print("Error!")
