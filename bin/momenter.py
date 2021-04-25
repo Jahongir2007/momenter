@@ -1,7 +1,7 @@
 '''
     Author: Jahongir Sobirov
     Momenter python library
-    Version: 1.0.6
+    Version: 1.0.7
     License: MIT
     All rights reserved (c) 2021
 '''
@@ -153,3 +153,6 @@ def unix(value):
     five_minutes_from_now = datetime.datetime.now() + five_minutes
     since_epoch = five_minutes_from_now - epoch
     print(since_epoch.days * seconds_in_a_day + since_epoch.seconds)
+def millisecond():
+    milliseconds = int(time() * 1000)
+    print(milliseconds)
