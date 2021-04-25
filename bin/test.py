@@ -29,3 +29,7 @@ momenter.between(4, 14, "SS")
 momenter.times(time={"year": 2018, "month": 12, "day": 24, "hour": 14, "minute": 22, "second": 14})
 
 momenter.mydate(2007, "false", "false")
+
+momenter.nowyear()
+momenter.nowmonth()
+momenter.nowday()
