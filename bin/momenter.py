@@ -1,7 +1,7 @@
 '''
     Author: Jahongir Sobirov
     Momenter python library
-    Version: 1.0.4
+    Version: 1.0.5
     License: MIT
     All rights reserved (c) 2021
 '''
@@ -141,3 +141,9 @@ def isvalid(value):
         print("false")
 def clone(get):
     print(get)
+def utc():
+    current_utc = datetime.datetime.utcnow()
+    print(current_utc)
+def arraydate(year, day, month):
+    array = [year, day, month]
+    print(array[0],"/",array[1],"/",array[2])
