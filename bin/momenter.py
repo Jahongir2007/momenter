@@ -128,14 +128,9 @@ def transform(time, to):
         if time / 7 == 1:
             print(int(time/7),"week")
         else:
-            print(time/30,"weeks")
+            print(time/7,"weeks")
     elif to == "day":
         if time / 1 == 1:
             print(int(time/1),"day")
         else:
             print(time/1,"days")
-    elif to == "hour":
-        if time / 1 == 1:
-            print(int(time/1),"hour")
-        else:
-            print(time/1,"hours")
