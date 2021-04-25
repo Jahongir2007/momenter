@@ -1,37 +1,61 @@
-## Welcome to GitHub Pages
+## Momenter
 
-You can use the [editor on GitHub](https://github.com/Jahongir2007/momenter/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
+### Importting Momenter
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+Import Mometer:
+```python
+import momenter
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### Formatting
 
-### Jekyll Themes
+You can format the current view in different views using the `format()` method.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Jahongir2007/momenter/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+```python
+momenter.format("YYYY MM DD HH MM SS") # 2021 04 Sunday 10 16 36
+momenter.format("YYYY MM DD HH MM") # 2021 04 Sunday 10 16
+momenter.format("YYYY MM DD HH") # 2021 04 Sunday 10
+momenter.format("YYYY MM DD") # 2021 04 Sunday
+momenter.format("YYYY MM") # 2021 04 
+momenter.format("YYYY") # 2021
+momenter.format("MM") # 04
+momenter.format("DD") # Sunday
+momenter.format("HH") # 10
+momenter.format("MM") # 16
+momenter.format("SS") # 36
+momenter.format("h:m") # 10:16
+momenter.format("h:m:s") # 10:16:36
+momenter.format("m/d/y") # 04/25/21
+```
+### Get now date
+You can use the `calendar()` method to see today's date.
 
-### Support or Contact
+```python
+momenter.calendar() #Sun Apr 25 10:16:36 2021
+```
+### Current hours
+If your watch is broken, the `moment()` method will help you.
+```python
+momenter.moment() # 10:16:36
+```
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+### Calc between times
+```python
+momenter.between(600, 1600, "YYYY") # 1000 years
+momenter.between(4, 5, "MM") # 1 month
+momenter.between(11, 14, "DD") # 3 days
+momenter.between(32, 44, "HH") # 12 hours
+momenter.between(22, 34, "mm") # 12 minutes
+momenter.between(4, 14, "SS") # 10 seconds
+```
+### dict time
+```python
+momenter.times(time={"year": 2018, "month": 12, "day": 24, "hour": 14, "minute": 22, "second": 14})
+# {'year': 2018, 'month': 12, 'day': 24, 'hour': 14, 'minute': 22, 'second': 14}
+```
+### Get your date
+Get your date:
+```python
+momenter.mydate(2007, 25, 5) # 2007.25.5
+momenter.mydate(2007, "false", 5) # 2007.5
+```
