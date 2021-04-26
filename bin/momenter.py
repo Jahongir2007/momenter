@@ -1,7 +1,7 @@
 '''
     Author: Jahongir Sobirov
     Momenter python library
-    Version: 1.1.0
+    Version: 1.1.6
     License: MIT
     All rights reserved (c) 2021
 '''
@@ -9,6 +9,7 @@
 import datetime
 import calendar
 from time import time, ctime, strftime
+from datetime import date
 
 def format(value):
     if value == "YYYY MM DD HH MM SS":
@@ -165,3 +166,75 @@ def minute():
 def hour():
     x = datetime.datetime.now()
     print(x.strftime("%H"))
+def date():
+    x = datetime.datetime.now()
+    print(x.strftime("%d"),"-",x.strftime("%b"))
+def week():
+    x = datetime.datetime.now()
+    print(x.strftime("%W"))
+def day():
+    x = datetime.datetime.now()
+    print(x.strftime("%A"))
+def weekday(value):
+    if value <= 7:
+        if value == 1:
+            print("Monday")
+        elif value == 2:
+            print("Tuesday")
+        elif value == 3:
+            print("Wednesday")
+        elif value == 4:
+            print("Thursday")
+        elif value == 5:
+            print("Friday")
+        elif value == 6:
+            print("Saturday")
+        elif value == 7:
+            print("Sunday")
+    else:
+        print("Error code!")
+def year():
+    x = datetime.datetime.now()
+    print(x.strftime("%Y"))
+def month():
+    x = datetime.datetime.now()
+    print(x.strftime("%m"))
+def ofYear(value):
+    if value == "day":
+        x = datetime.datetime.now()
+        print(x.strftime("%j"))
+    elif value == "week":
+        x = datetime.datetime.now()
+        print(x.strftime("%W"))  
+    else:
+        print("Error code!")
+def get(value):
+    if value == "day":
+        x = datetime.datetime.now()
+        print(x.strftime("%A")) 
+    elif value == "week":
+        x = datetime.datetime.now()
+        print(x.strftime("%W"))
+    elif value == "month":
+        x = datetime.datetime.now()
+        print(x.strftime("%m"))
+    elif value == "year":
+        x = datetime.datetime.now()
+        print(x.strftime("%Y"))
+    elif value == "second":
+        x = datetime.datetime.now()
+        print(x.strftime("%S"))
+    elif value == "year":
+        x = datetime.datetime.now()
+        print(x.strftime("%Y"))
+    elif value == "millisecond":
+        milliseconds = int(time() * 1000)
+        print(milliseconds)
+    elif value == "minute":
+        x = datetime.datetime.now()
+        print(x.strftime("%M"))
+    elif value == "hour":
+        x = datetime.datetime.now()
+        print(x.strftime("%H"))   
+    else:
+        print("Error code!")
