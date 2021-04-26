@@ -1,4 +1,4 @@
-## Momenter v1.1.0
+## Momenter v1.1.6
 ### Run this library
 1. Install .zip file in github
 2. Copy file: pynumeral-main/bin/momenter.py
@@ -139,4 +139,16 @@ momenter.minute() # 43
 To view the current hours:
 ```python
 momenter.minute() # 21
+```
+### Get
+To view all current time types:
+```python
+momenter.get("day") # Monday
+momenter.get("week") # 17
+momenter.get("month") # 04
+momenter.get("year") # 2021
+momenter.get("millisecond") # 1619415502716
+momenter.get("second") # 22
+momenter.get("minute") # 38
+momenter.get("hour") # 10
 ```
