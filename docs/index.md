@@ -138,7 +138,7 @@ momenter.minute() # 43
 ### Hour
 To view the current hours:
 ```python
-momenter.minute() # 21
+momenter.hour() # 21
 ```
 ### Get
 To view all current time types:
