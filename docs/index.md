@@ -1,4 +1,4 @@
-## Momenter v1.1.8
+## Momenter v1.2.0
 ### Run this library
 1. Install .zip file in github
 2. Copy file: pynumeral-main/bin/momenter.py
@@ -161,4 +161,10 @@ momenter.set("date", 25) # 25
 momenter.set("second", 30) # 30
 momenter.set("minute", 40) # 40
 momenter.set("hour", 20) #  20
+```
+### Maximum and minimum
+To find max and min value:
+```python
+momenter.maximum([2018, 2019]) # 2019
+momenter.minimum([2017, 2018]) # 2017
 ```
