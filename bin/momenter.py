@@ -1,7 +1,7 @@
 '''
     Author: Jahongir Sobirov
     Momenter python library
-    Version: 1.1.8
+    Version: 1.2.0
     License: MIT
     All rights reserved (c) 2021
 '''
@@ -271,7 +271,7 @@ def set(type, value):
             print("Error code!")
     elif type == "date":
         if value <= 365:
-            print(value)
+            print(value) 
         else:
             print("Error code!")
     elif  type == "second":
@@ -289,3 +289,7 @@ def set(type, value):
             print(value)
         else:
             print("Error code!")
+def maximum(value):
+    print(max(value[0],value[1]))
+def minimum(value):
+    print(min(value[0], value[1]))
