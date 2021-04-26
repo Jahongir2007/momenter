@@ -1,6 +1,11 @@
 ## Momenter v1.1.0
+### Run this library
+1. Install .zip file in github
+2. Copy file: pynumeral-main/bin/momenter.py
+3. Create new folder and paste momenter.py
+4. Create new (for example test.py) .py file in this folder (the folder must contain a momenter file)
+5. Write the code to your newly opened .py file and run it, following the Momenter syntax
 ### Importting Momenter
-
 Import Mometer:
 ```python
 import momenter
