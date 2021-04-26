@@ -1,7 +1,7 @@
 '''
     Author: Jahongir Sobirov
     Momenter python library
-    Version: 1.1.6
+    Version: 1.1.8
     License: MIT
     All rights reserved (c) 2021
 '''
@@ -238,3 +238,54 @@ def get(value):
         print(x.strftime("%H"))   
     else:
         print("Error code!")
+def set(type, value):
+    if type == "month":
+        if value <= 12:
+            if value == 1:
+                print("Jan")
+            elif value == 2:
+                print("Feb")
+            elif value == 3:
+                print("Mar")
+            elif value == 4:
+                print("Apr")
+            elif value == 5:
+                print("May")
+            elif value == 6:
+                print("Jun")
+            elif value == 7:
+                print("Jul")
+            elif value == 8:
+                print("Aug")
+            elif value == 9:
+                print("Sep")
+            elif value == 10:
+                print("Oct")
+            elif value == 11:
+                print("Nov")
+            elif  value == 12:
+                print("Dec")
+            else:
+                print("Error code!")
+        else:
+            print("Error code!")
+    elif type == "date":
+        if value <= 365:
+            print(value)
+        else:
+            print("Error code!")
+    elif  type == "second":
+        if value <= 60:
+            print(value)
+        else:
+            print("Error code!")
+    elif type == "minute":
+        if value <= 60:
+            print(value)
+        else:
+            print("Error code!")
+    elif type == "hour":
+        if value <= 24:
+            print(value)
+        else:
+            print("Error code!")
