@@ -1,4 +1,4 @@
-## Momenter v1.2.0
+## Momenter v1.2.2
 ### Run this library
 1. Install .zip file in github
 2. Copy file: pynumeral-main/bin/momenter.py
