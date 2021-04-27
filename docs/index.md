@@ -168,3 +168,25 @@ To find max and min value:
 momenter.maximum([2018, 2019]) # 2019
 momenter.minimum([2017, 2018]) # 2017
 ```
+### Start of time
+To know start of time:
+```python
+momenter.startOf("year") # 1-jan
+momenter.startOf("month") # 1-[month_name]
+momenter.startOf("week") # Monday
+momenter.startOf("day") # 00:00:00
+momenter.startOf("hour") # 00:00:00
+momenter.startOf("minute") # 00:00
+momenter.startOf("second") # 00
+```
+### End of time
+To know end of time:
+```python
+momenter.endOf("year") # 31-dec
+momenter.endOf("month") # 30-[month_name]:or:31-[month_name]
+momenter.endOf("week") # Sunday
+momenter.endOf("day") # 23:59:59
+momenter.endOf("hour") # 59:59:59
+momenter.endOf("minute") # 59:59
+momenter.endOf("second") # 59
+```
