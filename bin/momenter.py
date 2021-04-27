@@ -1,7 +1,7 @@
 '''
     Author: Jahongir Sobirov
     Momenter python library
-    Version: 1.2.0
+    Version: 1.2.2
     License: MIT
     All rights reserved (c) 2021
 '''
@@ -293,3 +293,37 @@ def maximum(value):
     print(max(value[0],value[1]))
 def minimum(value):
     print(min(value[0], value[1]))
+def startOf(value):
+    if value == "year":
+        print("1-jan")
+    elif value == "month":
+        print("1-[month_name]")
+    elif value == "week":
+        print("monday")
+    elif value == "day":
+        print("00:00:00")
+    elif value == "hour":
+        print("00:00:01")
+    elif value == "minute":
+        print("00:01")
+    elif value == "second":
+        print("01")
+    else: 
+        print("Error code!")
+def endOf(value):
+    if value == "year":
+        print("31-dec")
+    elif value == "month":
+        print("30-[month_name]:or:31-[month_name]")
+    elif value == "week":
+        print("sunday")
+    elif value == "day":
+        print("23:59:59")
+    elif value == "hour":
+        print("59:59:59")
+    elif value == "minute":
+        print("59:59")
+    elif value == "second":
+        print("59")
+    else:
+        print("Error code!")
